@@ -1,16 +1,229 @@
+@font-face {
+  font-family: eudoxus sans;
+  src: url(https://stijndv.com/fonts/EudoxusSans-Bold.woff2) format("woff2"),
+    url(https://stijndv.com/fonts/EudoxusSans-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: eudoxus sans;
+  src: url(https://stijndv.com/fonts/EudoxusSans-Regular.woff2) format("woff2"),
+    url(https://stijndv.com/fonts/EudoxusSans-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: eudoxus sans;
+  src: url(https://stijndv.com/fonts/EudoxusSans-Light.woff2) format("woff2"),
+    url(https://stijndv.com/fonts/EudoxusSans-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: eudoxus sans;
+  src: url(https://stijndv.com/fonts/EudoxusSans-ExtraBold.woff2)
+      format("woff2"),
+    url(https://stijndv.com/fonts/EudoxusSans-ExtraBold.woff) format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: eudoxus sans;
+  src: url(https://stijndv.com/fonts/EudoxusSans-ExtraLight.woff2)
+      format("woff2"),
+    url(https://stijndv.com/fonts/EudoxusSans-ExtraLight.woff) format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: eudoxus sans;
+  src: url(https://stijndv.com/fonts/EudoxusSans-Medium.woff2) format("woff2"),
+    url(https://stijndv.com/fonts/EudoxusSans-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../fonts/ClashDisplay-Variable.woff2") format("woff2"),
+    url("../fonts/ClashDisplay-Variable.woff") format("woff"),
+    url("../fonts/ClashDisplay-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../fonts/ClashDisplay-Extralight.woff2") format("woff2"),
+    url("../fonts/ClashDisplay-Extralight.woff") format("woff"),
+    url("../fonts/ClashDisplay-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../fonts/ClashDisplay-Light.woff2") format("woff2"),
+    url("../fonts/ClashDisplay-Light.woff") format("woff"),
+    url("../fonts/ClashDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../fonts/ClashDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/ClashDisplay-Regular.woff") format("woff"),
+    url("../fonts/ClashDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../fonts/ClashDisplay-Medium.woff2") format("woff2"),
+    url("../fonts/ClashDisplay-Medium.woff") format("woff"),
+    url("../fonts/ClashDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../fonts/ClashDisplay-Semibold.woff2") format("woff2"),
+    url("../fonts/ClashDisplay-Semibold.woff") format("woff"),
+    url("../fonts/ClashDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../fonts/ClashDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/ClashDisplay-Bold.woff") format("woff"),
+    url("../fonts/ClashDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: ClashDisplay;
+  background: #0f0f0f;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-root {
+  margin: auto !important;
+  padding: 5% !important;
+}
+
+.myCarousel {
+  margin-top: -6%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  height: 286px;
+}
+
+.carousel .control-dots {
+  padding-left: 5px !important;
+  outline: 0;
+  bottom: 5% !important;
+}
+
+.myCarousel h3 {
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.myCarousel h4 {
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 0;
+  font-weight: 500;
+  color: #fff;
+  font-size: 14px;
+}
+
+.myCarousel p {
+  line-height: 1.5 !important;
+  color: #fff;
+  font-size: 15px;
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+.myCarousel p:before {
+  content: "“";
+  color: #fff;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+}
+
+.myCarousel p:after {
+  content: "”";
+  color: #fff;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+  line-height: 0;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+  background: #454545 !important;
+  outline: 0;
+}
+
+.carousel.carousel-slider .control-arrow {
+  background: #000 !important;
+  height: 50px !important;
+  position: absolute;
+  top: 35% !important;
 }
 
 a {
-  color: inherit;
+  color: #fff;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
