@@ -36,7 +36,7 @@ function CaseHero() {
       <Navbar />
       <HeroWrapper>
         <DescHolder>
-          <Title>Case studies</Title>
+          <Title>Case Studies</Title>
           <Description>
             Elit eu odio interdum facilisis curabitur mauris phasellus vitae.
             Pretium fames vel tortor
@@ -93,7 +93,7 @@ const ImageHolder = styled.div`
   z-index: 1;
 `;
 const DescHolder = styled.div`
-  max-width: 350px;
+  /* max-width: 350px; */
   @media only screen and (max-width: 550px) {
     display: flex;
     flex-direction: column;
@@ -110,6 +110,7 @@ const Btn = styled(btn)`
 `;
 const Title = styled(Heading)`
   margin: 20px 0;
+  font-size: 40px;
 `;
 const Description = styled(Paragraph)``;
 const NewImg = styled.div`

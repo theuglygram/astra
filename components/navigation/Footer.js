@@ -9,7 +9,7 @@ function Footer() {
         <Wrap>
           <DetailSection>
             <LogoWrapper>
-              <Image src="/svgs/logo.svg" width={150} height={50} alt="logo" />
+              <Image src="/svgs/logo.svg" width={108} height={30} alt="logo" />
             </LogoWrapper>
             <Sub>Subscribe for all updates</Sub>
             <SubWrapper>
